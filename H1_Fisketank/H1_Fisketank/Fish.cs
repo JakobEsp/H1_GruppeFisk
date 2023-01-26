@@ -8,6 +8,6 @@ namespace H1_Fisketank
         public string species { get; set; }
         public double lenght { get; set; }
         public double weight { get; set; }
-        public string[] types { get; set; }
+        public List<string> types = new(); 
     }
 }
