@@ -40,7 +40,7 @@ namespace H1_Fisketank
             }
         }
         public void AddFish()
-        {
+        { 
             Fish newfish = new Fish();
             Console.Write("Enter the fish name: ");
             while (true)
