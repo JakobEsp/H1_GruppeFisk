@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace H1_Fisketank
 {
     class Fish
@@ -14,9 +9,5 @@ namespace H1_Fisketank
         public double lenght { get; set; }
         public double weight { get; set; }
         public string[] types { get; set; }
-    }
-    public class Aquarium
-    {
-        List<Fish> fishList= new();
     }
 }
