@@ -225,22 +225,22 @@ namespace H1_Fisketank
             Console.WriteLine("\nSaltfish Herbivores:\n");
             foreach(Fish fish in saltHerbs) 
             {
-                Console.Write($"Name: {fish.name} Age: {fish.age} Species:  {fish.species} Lenght: {fish.lenght} weight: {fish.weight}");
+                Console.Write($"\nName: {fish.name} \nAge: {fish.age} \nSpecies:  {fish.species} \nLenght: {fish.lenght} \nWeight: {fish.weight}");
             }
             Console.WriteLine("\nSaltfish Carnivores:\n");
             foreach(Fish fish in saltCarns) 
             {
-                Console.Write($"Name: {fish.name} Age: {fish.age} Species:  {fish.species} Lenght: {fish.lenght} weight: {fish.weight}");
+                Console.Write($"\nName: {fish.name} \nAge: {fish.age} \nSpecies:  {fish.species} \nLenght: {fish.lenght} \nWeight: {fish.weight}");
             }
             Console.WriteLine("\nFreshwater Herbivores:\n");
             foreach(Fish fish in freshHerbs) 
             {
-                Console.Write($"Name: {fish.name} Age: {fish.age} Species:  {fish.species} Lenght: {fish.lenght} weight: {fish.weight}");
+                Console.Write($"\nName: {fish.name} \nAge: {fish.age} \nSpecies:  {fish.species} \nLenght: {fish.lenght} \nWeight: {fish.weight}");
             }
             Console.WriteLine("\nFreshwater Carnivores:\n");
             foreach(Fish fish in freshCarns) 
             {
-                Console.Write($"Name: {fish.name} Age: {fish.age} Species:  {fish.species} Lenght: {fish.lenght} weight: {fish.weight}");
+                Console.Write($"\nName: {fish.name} \nAge: {fish.age} \nSpecies:  {fish.species} \nLenght: {fish.lenght} \nWeight: {fish.weight}");
             }
             Console.WriteLine("Press Anything to return");
             Console.ReadKey();
