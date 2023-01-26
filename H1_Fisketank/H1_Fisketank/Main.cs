@@ -17,6 +17,7 @@ namespace H1_Fisketank
 
         public void Menu()
         {
+            Console.BackgroundColor= ConsoleColor.DarkBlue;
             while(true)
             {
                 Console.WriteLine("[1] Add Fish  [2] Remove Fish  [3] Show Aquariums");
