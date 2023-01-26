@@ -40,18 +40,82 @@ namespace H1_Fisketank
         }
         public void AddFish()
         {
-
             Fish newfish = new Fish();
             Console.Write("Enter the fish name: ");
-            newfish.name = Console.ReadLine();
+            while (true)
+            {
+                string s = Console.ReadLine();
+                if (s.Trim() != "")
+                {
+                    newfish.name = s;
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("WrongInput try again");
+                }
+            }
             Console.Write("Enter the fish lenght: ");
-            newfish.lenght = (double.Parse(Console.ReadLine()));
+            while(true)
+            {
+                string s = Console.ReadLine().Trim();
+                double num;
+                if (double.TryParse(s, out num))
+                {
+                    newfish.lenght = num;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("wrong input only type numbers");
+                }
+            }
             Console.Write("Enter the fish species: ");
-            newfish.species = Console.ReadLine();
+            while (true)
+            {
+                string s = Console.ReadLine();
+                if (s.Trim() != "")
+                {
+                    newfish.species = s;
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("WrongInput try again");
+                }
+            }
             Console.Write("Enter the fish age: ");
-            newfish.age = int.Parse(Console.ReadLine());
+            while (true)
+            {
+                string s = Console.ReadLine().Trim();
+                double num;
+                if (double.TryParse(s, out num))
+                {
+                    newfish.age = num;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("wrong input only type numbers");
+                }
+            }
             Console.Write("Enter the fish weight: ");
-            newfish.weight = (double.Parse(Console.ReadLine()));
+            while (true)
+            {
+                string s = Console.ReadLine().Trim();
+                double num;
+                if (double.TryParse(s, out num))
+                {
+                    newfish.weight = num;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("wrong input only type numbers");
+                }
+            }
             Console.WriteLine("Is it a saltwater fish? Press 1 for yes: ");
             ConsoleKey key = Console.ReadKey().Key;
             if (key == ConsoleKey.D1)
